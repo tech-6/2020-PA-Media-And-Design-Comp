@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class WaterData
+{
+    /*private double cond;
+    private double ph;
+    private double ppm;
+    */
+    
+    private ArrayList <String> indices = new ArrayList <String> (0); //marks the indices of each sample tested
+    private ArrayList ph = new ArrayList(); //recording pH levels of water sample
+    private ArrayList ppm = new ArrayList(); //records ppm of water sample
+    
+    public void create(String sName, double p, double parts){ //p is pH; parts is PPM
+        indices.add(sName + "; " + indices.size()); //creates a value in indices to connect the information of each arraylist
+        
+        ph.add(p);
+        ppm.add(parts);
+    }//constructor @WaterData
+    
+    
+}
