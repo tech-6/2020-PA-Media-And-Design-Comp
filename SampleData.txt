@@ -1,7 +1,9 @@
 -- Imput the sample data into this file for further examples, testing, and validation in the code.
 
-Categories recorded: title, pH levels, ppm levels, location(if applicable)
+-- Categories recorded: title, pH levels, ppm levels, location(if applicable)
 
+Water Tests(PA):
+http://environmentalservicelab.com/docs/PSU%20-%20Water%20Testing%20Interpretation.pdf
 
 Sample A:
 
