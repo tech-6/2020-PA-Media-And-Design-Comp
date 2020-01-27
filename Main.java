@@ -1,3 +1,4 @@
+
 import java.util.*;
 
 class Main
@@ -8,9 +9,24 @@ class Main
     boolean pHc = false;
     boolean ppmc = false;
    
+    WaterData test = new WaterData();
+    
+    test.add("Johnsonburg Water Athority", 6.9, 150);
+    test.add("O I L", 5, 9000);
+    test.add("Ridgway", 7.1, 140);
+    test.add("St Marys", 7, 100);
+    test.add("Colorado", 7, 70);
+    
+    System.out.println(test);//printing out the list
+    
+    System.out.println(test.sample(4));//printing out specific indices
+    System.out.println(test.sample(3));
+    System.out.println(test.sample(2));
+    System.out.println(test.sample(0));
+    System.out.println(test.sample(1));
     
     
-    while(flag == 0){
+    /*while(flag == 0){
       System.out.println("Please name the new water sample");
       String title = in.nextLine();
     
@@ -41,6 +57,6 @@ class Main
      
     System.out.println("Input 0 to continue, anything else to disengage");
     flag = in.nextInt();
-    }
+    }*/
   }//main method
 }
