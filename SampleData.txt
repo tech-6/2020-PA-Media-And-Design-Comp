@@ -15,6 +15,6 @@ Sample B:
 
   pH: 8.0–8.2
   
-  ppm: 
+  ppm: 135
   
-  Lake erie
+  Lake erie Buffalo water supply
