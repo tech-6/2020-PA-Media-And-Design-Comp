@@ -10,3 +10,11 @@ Sample A:
   ppm: 143.2
 	
   Ridgway Groundwater
+
+Sample B:
+
+  pH: 8.0–8.2
+  
+  ppm: 
+  
+  Lake erie
