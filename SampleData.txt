@@ -17,4 +17,6 @@ Sample B:
   
   ppm: 135
   
+  Hard
+  
   Lake erie Buffalo water supply
