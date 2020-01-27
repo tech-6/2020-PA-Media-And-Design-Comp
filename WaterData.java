@@ -11,26 +11,33 @@ public class WaterData
     private ArrayList ph = new ArrayList(0); //recording pH levels of water sample
     private ArrayList ppm = new ArrayList(0); //records ppm of water sample
     
-    private int markedIndices = 0;
+    private int mInd = -1;
     private int tang = 0;
     
-    public add(String sName, double p, double parts){//method used for adding new samples to the arrays
-        markedIndices = indices.size();
-        indices.add(indices.size() + ": " + sName); //creates a value in indices to connect the information of each arraylist
+    public void add(String sName, double p, double parts){//method used for adding new samples to the arrays
+        mInd = indices.size();
+        indices.add(indices.size() + ". " + sName); //creates a value in indices to connect the information of each arraylist
         ph.add(p);
         ppm.add(parts);
     }//method @add
     
     public WaterData(){
-
     }//constructor @WaterData
     
-    public String sample = //not finished
+    public String sample(int in){//select a specific sample
+        if(in > mInd || in < 0)
+            return "ERROR: No sample data found";
+        else{
+            return indices.get(in) + "\n\t" + "pH level: " + ph.get(in) + "\n\tppm level: " + ppm.get(in);
+        }
+    }//method @sample
+    
+    
     
     public String toString(){
       String a = "";
-      for(indices: b){
-        a += b;
+      for(String b: indices){
+        a += b + "; ";
       }
       return a;
     }
