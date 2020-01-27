@@ -8,15 +8,19 @@ public class WaterData
     */
     
     private ArrayList <String> indices = new ArrayList <String> (0); //marks the indices of each sample tested
-    private ArrayList ph = new ArrayList(); //recording pH levels of water sample
-    private ArrayList ppm = new ArrayList(); //records ppm of water sample
+    private ArrayList ph = new ArrayList(0); //recording pH levels of water sample
+    private ArrayList ppm = new ArrayList(0); //records ppm of water sample
     
-    public void create(String sName, double p, double parts){ //p is pH; parts is PPM
-        indices.add(sName + "; " + indices.size()); //creates a value in indices to connect the information of each arraylist
-        
+    private int markedIndices = 0;
+    
+    public WaterData(String sName, double p, double parts){//p is pH; parts is PPM
+        markedIndices = indices.size();
+        indices.add(indices.size() + ": " + sName); //creates a value in indices to connect the information of each arraylist
         ph.add(p);
         ppm.add(parts);
     }//constructor @WaterData
     
-    
+    public String toString(){
+      return indices.get(markedIndices) + "\n\t" + "pH level: " + ph.get(markedIndices) + "\n\t" + "ppm level: " + ppm.get(markedIndices);
+    }
 }
