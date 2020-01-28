@@ -24,7 +24,11 @@ public class WaterData
     public WaterData(){
     }//constructor @WaterData
     
-    public String sample(int in){//select a specific sample
+    public String sample(){//select a specific sample
+      Scanner sc = new Scanner(System.in);
+      
+        System.out.println("Enter an index to search:");
+        int in = sc.nextInt();
         if(in > mInd || in < 0)
             return "ERROR: No sample data found";
         else{
