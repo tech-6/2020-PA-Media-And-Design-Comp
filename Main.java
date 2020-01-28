@@ -19,13 +19,18 @@ class Main
     
     System.out.println(test);//printing out the list
     
-    System.out.println(test.sample(4));//printing out specific indices
-    System.out.println(test.sample(3));
-    System.out.println(test.sample(2));
-    System.out.println(test.sample(0));
-    System.out.println(test.sample(1));
     
+    System.out.println("Would you like to search for a sample? (0 for yes, anything else for no)");
+    int test1 = in.nextInt();
     
+    if(test1 == 0){
+      while(flag == 0){
+        System.out.println(test.sample());
+    
+        System.out.println("Would you like to continue searching? (0 for yes, anything else for no)");
+        flag = in.nextInt();
+      }
+    }
     /*while(flag == 0){
       System.out.println("Please name the new water sample");
       String title = in.nextLine();
