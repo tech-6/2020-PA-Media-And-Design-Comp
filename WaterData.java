@@ -29,12 +29,19 @@ public class WaterData{
         }
     }//method @sample
     
-    public String remove(int ind){//remove an index from the sample array
-      int size = indices.size() - 1;
-      System.out.println(indices.get(ind) + " Has been removed.");
+    public void remove(int ind){//remove an index from the sample array NOTE: STILL NEEDS PH AND PPM
+        int size = indices.size() - 1;
+        System.out.println(indices.get(ind) + " Has been removed.");
       
-      indices.remove(ind);
+        indices.remove(ind);
       
+        for(int i = ind; i < indices.size() - 1; i++){
+            String str = indices.get(i);
+          
+            str += i + str.substring(1, indices.get(i).length());
+          
+            indices.set(i, str);
+        }
     }
     
     public String toString(){//returns the list of samples when the class is called
