@@ -37,7 +37,11 @@ class Main
     
     System.out.println(test);//printing out the list
     
+    test.remove(3);
     
+    System.out.println(test);
+    
+    /*
     System.out.println("Would you like to search for a sample? (0 for yes, anything else for no)");
     int test1 = in.nextInt();
     
@@ -48,7 +52,7 @@ class Main
         System.out.println("Would you like to continue searching? (0 for yes, anything else for no)");
         flag = in.nextInt();
       }
-    }
+    }*/
     /*while(flag == 0){
       System.out.println("Please name the new water sample");
       String title = in.nextLine();
