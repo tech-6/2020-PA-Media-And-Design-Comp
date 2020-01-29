@@ -1,9 +1,12 @@
 
 import java.util.*;
+import java.text.*;
 
 class Main
 {
   public static void main(String[] args){
+    DecimalFormat df = new DecimalFormat("###.##");
+      
     Scanner in = new Scanner(System.in);
     int flag = 0;
     boolean pHc = false;
@@ -11,11 +14,9 @@ class Main
    
     WaterData test = new WaterData();
     
-    test.add("Johnsonburg Water Athority", 6.9, 150);
-    test.add("O I L", 5, 9000);
-    test.add("Ridgway", 7.1, 140);
-    test.add("St Marys", 7, 100);
-    test.add("Colorado", 7, 70);
+    for(int i = 0; i < 31; i++){//creating 30 random test samples
+        test.add(("AutoSample" + ""), Double.parseDouble(df.format((Math.random()*2.51) + 6)), (int)(Math.random()*150));
+    }
     
     System.out.println(test);//printing out the list
     
