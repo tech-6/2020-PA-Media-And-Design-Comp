@@ -14,9 +14,26 @@ class Main
    
     WaterData test = new WaterData();
     
-    for(int i = 0; i < 31; i++){//creating 30 random test samples
+    /*for(int i = 0; i < 31; i++){//creating 30 random test samples
         test.add(("AutoSample" + ""), Double.parseDouble(df.format((Math.random()*2.51) + 6)), (int)(Math.random()*150));
+    }*/
+    
+    while(flag == 0){
+        in.nextLine();
+        
+        System.out.println("Enter a sample name");
+        String title = in.nextLine();
+        System.out.println("Enter sample ph level");
+        double phh = in.nextDouble();
+        System.out.println("Enter sample ppm level");
+        double pppm = in.nextDouble();
+        test.add(title, phh, pppm);
+        
+        
+        System.out.println("Continue? (0/-1)");
+        flag = in.nextInt();
     }
+    flag = 0;
     
     System.out.println(test);//printing out the list
     
