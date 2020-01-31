@@ -1,5 +1,9 @@
 language: android
 dist: trusty
+addons:
+  apt:
+    packages:
+      ant
 android:
   components:
     # Uncomment the lines below if you want to
@@ -30,4 +34,3 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
     - $HOME/.android/build-cache
-    
