@@ -5,15 +5,17 @@
 Water Tests(PA):
 http://environmentalservicelab.com/docs/PSU%20-%20Water%20Testing%20Interpretation.pdf
 
-Sample A:
+Sample A: Safe
 
   pH: 6.8
 	
   ppm: 143.2
 	
+  Hard
+  
   Ridgway Groundwater
 
-Sample B:
+Sample B: Safe
 
   pH: 8.0–8.2
   
@@ -23,7 +25,7 @@ Sample B:
   
   Lake erie Buffalo water supply
 
-Sample C:
+Sample C: Safe
 
    pH: 7.8
    
@@ -32,3 +34,13 @@ Sample C:
    Modderatly hard
    
    Allegheny river
+   
+Sample D: safe but not recomended
+
+   pH: 5.6
+   
+   ppm: 423
+   
+   Very hard
+   
+   Hanging lake CO
