@@ -1,0 +1,4 @@
+#Fri Jan 24 20:00:11 EST 2020
+base.0=/home/ceasharks/github/2020-PA-Media-And-Design-Comp/src/app/build/intermediates/dex/debug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
