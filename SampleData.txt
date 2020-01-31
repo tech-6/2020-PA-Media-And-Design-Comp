@@ -22,3 +22,13 @@ Sample B:
   Hard
   
   Lake erie Buffalo water supply
+
+Sample C:
+
+   pH: 7.8
+   
+   ppm: 72
+   
+   Modderatly hard
+   
+   Allegheny river
