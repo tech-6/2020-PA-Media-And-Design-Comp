@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">aquasafe</string>
+    <string name="build_pass">Build PASS!</string>
 </resources>
