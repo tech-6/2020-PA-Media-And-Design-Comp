@@ -28,3 +28,5 @@ Sample D: safe but not recomended
    ppm: 423
    Very hard
    Hanging lake CO
+
+pg 4 (water tests PA)
