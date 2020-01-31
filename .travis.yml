@@ -1,9 +1,6 @@
 language: android
 dist: trusty
-addons:
-  apt:
-    packages:
-      ant
+before_script: cd src
 android:
   components:
     # Uncomment the lines below if you want to
