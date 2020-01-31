@@ -1,0 +1,8 @@
+Project Name: 
+AquaSafe
+
+Project Members: 
+Ian Timchak, Andrew Gerber, Alexander Brow
+
+Project Description/Summary:
+An android application made to help users test various aspects of water like location, safety for drinking, safety towards animals, pH, Hardness, etc.

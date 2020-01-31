@@ -3,7 +3,9 @@
 [![forthebadge](https://forthebadge.com/images/badges/designed-in-etch-a-sketch.svg)](https://forthebadge.com)
 
 SMAHS Programming Category under the PA Media and Design Comp
+
 Group members: Ian Timchak, Alex Brow, Andrew Gerber
+
 Current project: AquaSafe
 
 **Build Status**
