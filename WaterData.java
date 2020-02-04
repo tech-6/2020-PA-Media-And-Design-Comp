@@ -1,5 +1,29 @@
 import java.util.*;
 
+//---WATER SAMPLE CLASS DOCUMENTATION
+/**WaterSample class uses:
+  *Create a new sample object
+  *hold its own unique ID
+  *be a part of the static array that lists all
+    of the WaterSample objects
+  *Analyze water to an extent
+  *
+  *@constructor (String name)
+  *@constructor (String name, pH)
+  *@constructor (String name, pH, ppm)
+  *@consturctor (String name, pH, ppm, String color)
+  *@constructor (String name, pH, ppm, String color, String location) << MAIN (this()) LOCATION
+ */
+
+//---WATER DATA CLASS DOCUMENTATION
+/**WaterData class uses
+  *Water Data contains the information of every WaterSample class.
+  *Be able to remove WaterSample objects from its database
+  *Be able to edit the contents of a WaterSample object
+  *Be able to search for a specific WaterSample object based on its unique ID
+  *Be able to call certain methods of a WaterSample object
+ */
+
 public class WaterData{
     private ArrayList <String> indices = new ArrayList <String> (0); //marks the indices of each sample tested
     private ArrayList ph = new ArrayList(0); //recording pH levels of water sample
