@@ -153,6 +153,10 @@ public class WaterSample
   return -1;
  }//findKeyword
  
+ public int getID(){
+   return uID;
+ }//getID
+ 
  public String toString(){
    return sampleName + "\n\t Location: " + location + "\n\t Color: " + color + "\n\t pH: " + phLevel + "\n\t Hardness: " + hardness + "\n\t Sample ID: " + uID;
  }//toString
