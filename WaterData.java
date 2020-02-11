@@ -27,7 +27,7 @@ import java.util.*;
 
 public class WaterData
 {
-  private ArrayList <WaterSample> samples = new ArrayList<WaterSample>();
+  private ArrayList <WaterSample> samples = new ArrayList<WaterSample>(0);
   
 /**
  * Default Constructor
@@ -38,8 +38,22 @@ public class WaterData
  * Smallest method for add()
  * @param newWS A new WaterSample class being added to the WaterData list for analysis
  */
-  public void add(WaterSample newWS){
-    samples.add(newWS);
+  public void add(WaterSample newWS){ //NEEDS WORK
+    int lastInd = 0;
+    
+    if(samples.size() > 0){
+      
+      lastInd = samples.get(samples.size() - 1).getID();
+      if(newWS.getID() < lastInd){ //organizing (id least to greatest)
+        if(lastInd < 1)
+          samples.add(0, newWS);
+        else if(lastInd > 0)
+          samples.add(lastInd, newWS);
+      }else
+        samples.add(newWS);
+    }else
+      samples.add(newWS);
+    
   }//add(WS)
   
 /**
@@ -49,12 +63,14 @@ public class WaterData
     String idList = "";
     
     for(WaterSample a: samples){
-      if(samples.indexOf(a) == samples.size())
+      if(samples.indexOf(a) == samples.size() - 1)
         idList += a.getID();
       else
         idList += a.getID() + ", ";
     }//for
         
-    return "Samples: " + idList;
+    return "Samples(ID): " + idList;
   }//toString
+  
+  public String nameList(){return "error";}
 }
