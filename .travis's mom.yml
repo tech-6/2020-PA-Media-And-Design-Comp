@@ -1,6 +1,8 @@
 language: android
 dist: trusty
-before_script: cd src
+before_script:
+      - cd src
+      - android-wait-for-emulator
 android:
   components:
     # Uncomment the lines below if you want to
