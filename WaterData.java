@@ -1,20 +1,3 @@
-import java.util.*;
-
-//---WATER SAMPLE CLASS DOCUMENTATION
-/**WaterSample class uses:
-  *Create a new sample object
-  *hold its own unique ID
-  *be a part of the static array that lists all
-    of the WaterSample objects
-  *Analyze water to an extent
-  *
-  *@constructor (String name)
-  *@constructor (String name, pH)
-  *@constructor (String name, pH, ppm)
-  *@consturctor (String name, pH, ppm, String color)
-  *@constructor (String name, pH, ppm, String color, String location) << MAIN (this()) LOCATION
- */
-
 //---WATER DATA CLASS DOCUMENTATION
 /**WaterData class uses
   *Water Data contains the information of every WaterSample class.
@@ -40,15 +23,17 @@ public class WaterData
  */
   public void add(WaterSample newWS){ //NEEDS WORK
     int lastInd = 0;
+    int lastID = 0;
     
     if(samples.size() > 0){
       
-      lastInd = samples.get(samples.size() - 1).getID();
-      if(newWS.getID() < lastInd){ //organizing (id least to greatest)
+      lastInd = samples.size() - 1; //gets the index for the last position in the array
+      lastID = samples.get(lastInd).getID(); //gets the ID of that WaterSample
+      if(newWS.getID() < lastID){ //organizing (id least to greatest)
         if(lastInd < 1)
           samples.add(0, newWS);
-        else if(lastInd > 0)
-          samples.add(lastInd, newWS);
+        if(lastInd > 0)
+          samples.add(lastInd - 1, newWS);  //with main(2/17/2020) prints 2, 0, 1, 3?
       }else
         samples.add(newWS);
     }else
