@@ -29,17 +29,31 @@ public class WaterData
       
       lastInd = samples.size() - 1; //gets the index for the last position in the array
       lastID = samples.get(lastInd).getID(); //gets the ID of that WaterSample
-      if(newWS.getID() < lastID){ //organizing (id least to greatest)
-        if(lastInd < 1)
-          samples.add(0, newWS);
-        if(lastInd > 0)
-          samples.add(lastInd - 1, newWS);  //with main(2/17/2020) prints 2, 0, 1, 3?
-      }else
-        samples.add(newWS);
+      if(lastInd < 1){
+          samples.add(newWS);
+      }
+      if(lastInd > 0)
+        samples.add(checkOrder(newWS), newWS);
     }else
       samples.add(newWS);
     
   }//add(WS)
+  
+/**
+ * for ordering the stuff
+ * @param newWS A new water sample being checked.
+ * @return Returns the index the new water sample is placed in.
+ */ 
+  private int checkOrder(WaterSample newWS){
+    int ind = Integer.MAX_VALUE;  
+      
+    for(int i = samples.size() - 1; i > 0; i--){
+        if(samples.get(i).getID() > newWS.getID())
+            ind = samples.IndexOf(i) - 1;
+    }//for
+    
+    return ind;
+  }//checkOrder
   
 /**
    * toString method
