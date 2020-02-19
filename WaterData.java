@@ -12,6 +12,8 @@ public class WaterData
 {
   private ArrayList <WaterSample> samples = new ArrayList<WaterSample>(0);
   
+  private static int tempHold;
+  
 /**
  * Default Constructor
  */ 
@@ -29,29 +31,38 @@ public class WaterData
       
       lastInd = samples.size() - 1; //gets the index for the last position in the array
       lastID = samples.get(lastInd).getID(); //gets the ID of that WaterSample
+      
+      System.out.println(lastID + " " + lastInd);
+      if(newWS.getID() < lastID){
       if(lastInd < 1){
-          samples.add(newWS);
+            samples.add(0, newWS);
+        
       }
       if(lastInd > 0)
         samples.add(checkOrder(newWS), newWS);
+      }else
+        samples.add(newWS);
+        tempHold = newWS.getID();
     }else
       samples.add(newWS);
+      tempHold = newWS.getID();
     
   }//add(WS)
   
 /**
- * for ordering the stuff
+ * for ordering the stuff -- BROKEN NEEDS FIXED (2/19/2020)
  * @param newWS A new water sample being checked.
  * @return Returns the index the new water sample is placed in.
  */ 
   private int checkOrder(WaterSample newWS){
     int ind = Integer.MAX_VALUE;  
       
-    for(int i = samples.size() - 1; i > 0; i--){
+    for(int i = samples.size() - 1; i >= 0; i--){
         if(samples.get(i).getID() > newWS.getID())
-            ind = samples.IndexOf(i) - 1;
+            ind = samples.indexOf(i) - 1;
     }//for
-    
+    if(ind < 0)
+        ind = 0;
     return ind;
   }//checkOrder
   
