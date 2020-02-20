@@ -19,6 +19,8 @@ public class WaterData
  */ 
   public WaterData(){}
   
+
+  
 /**
  * Smallest method for add()
  * @param newWS A new WaterSample class being added to the WaterData list for analysis
@@ -56,13 +58,15 @@ public class WaterData
  */ 
   private int checkOrder(WaterSample newWS){
     int ind = Integer.MAX_VALUE;  
-      
+    
     for(int i = samples.size() - 1; i >= 0; i--){
         if(samples.get(i).getID() > newWS.getID())
-            ind = samples.indexOf(i) - 1;
+            ind = i;
     }//for
+    
     if(ind < 0)
         ind = 0;
+    
     return ind;
   }//checkOrder
   
