@@ -70,9 +70,53 @@ public class WaterData
     return ind;
   }//checkOrder
   
+  public void analyze(String name){
+  }
+  
+/**
+ * method for comparing water data
+ * @param id The id of the WaterSample being tested
+ */ 
+  public void analyze(int id){
+    String phCheck = "";
+    String ppmCheck = "";
+    
+    String finalText = "[" + subject.sampleName + "]";
+   
+    
+    WaterSample subject = samples.get(samples.indexOf(id));
+    
+    if(subject.phLevel >= 6 && <= 8){//work
+      phCheck = "";
+    }else
+      phCheck = "not";
+    
+    
+  }
+  
+  
+/**
+   * list method
+   * @return list of water samples by name
+   */
+  public String list(){
+    String nameList = "";
+    
+    for(WaterSample a: samples){
+      if(samples.indexOf(a) == samples.size() - 1)
+        nameList += a.getName();
+      else
+        nameList += a.getName() + ", ";
+    }//for
+        
+    return "Samples(name): " + nameList;
+  }//list
+  
+  
 /**
    * toString method
-   */
+   * @return list of water samples by ID
+   */  
   public String toString(){
     String idList = "";
     
@@ -86,5 +130,4 @@ public class WaterData
     return "Samples(ID): " + idList;
   }//toString
   
-  public String nameList(){return "error";}
 }
