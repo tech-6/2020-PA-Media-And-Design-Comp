@@ -21,11 +21,11 @@ public class WaterSample
 {
   private static final String[] colorlist = {"Brown", "Yellow", "Orange", "Cloudy", "Clear"};
   
-  private String location;
-  private String sampleName;
-  private String color;
-  private double phLevel;
-  private double hardness;
+  public String location;
+  public String sampleName;
+  public String color;
+  public double phLevel;
+  public double hardness;
   
   //Unique ID
   private static int numID = 0;
@@ -156,6 +156,10 @@ public class WaterSample
  public int getID(){
    return uID;
  }//getID
+ 
+ public String getName(){
+   return sampleName;
+ }//getName
  
  public String toString(){
    return sampleName + "\n\t Location: " + location + "\n\t Color: " + color + "\n\t pH: " + phLevel + "\n\t Hardness: " + hardness + "\n\t Sample ID: " + uID;
