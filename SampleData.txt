@@ -1,5 +1,54 @@
 -- Imput the sample data into this file for further examples, testing, and validation in the code.
 
+Analysis formatting for code{
+[Sample Name]
+pH Levels:
+  pH Level: ()
+  The pH levels for this water sample are (not) within an acceptable range.
+  
+  pH Levels of water are generally okay to use if it is between 6 and 8 pH.
+  Please note that the pH of the water alone does not mean it is safe to drink, just to test the acidity of the water.
+  
+Hardness levels:
+  Hardness level: ()
+  The hardness levels for the water sample are (not) within an accepted range.
+  
+  Hardness is a measure of Calcium Carbonate in the water.
+  It is generally recorded in ppm for Calcium Carbonate and also in mg/L.
+  While Hardness is not a health threat, it should be taken under consideration when chosing water.
+  High levels of Hardness can be a problem for aesthetics mainly, and it is common to use water with moderate levels of Hardness.
+  Moderate Hardness can be from 60 to 120 ppm.
+  
+Color:
+  Color of sample: ()
+  The color of this water sample could mean that it can contain ().
+  
+  Color in water is not always a bad sign but it can represent different minerals in a water sample.
+  In pipes that are made out of iron and lead rust can pollute the water and create changes in color.
+  Please note that the color of the water does not exactly mean that the water is polluted, but it should
+  be taken into consideration.
+  For more information on water color you can go here: ().
+  
+Location:
+  Location of sample: ()
+  The location that this water sample was collected in has(n't) had (any) previous issues with water pollution or safety.
+  Water from this area has been common to have (none or undectable) (contaminates listed) types of contaminates in it and
+  should be taken into account when deciding whether the water is safe to use.
+  
+Report:
+  From the information given on this water sample it is (safe/unsafe/unsure) (to drink/if it is safe).
+  
+  Professional testing may be beneficial as a water test such as this is not always reliable and there are sometimes hidden
+  dangers that can happen. For consumer use this may be all that is needed.
+  
+  For more information on home testing and water safety you can use these resources:
+    ()
+    ()
+    ...
+}
+
+
+
 -- Categories recorded: title, pH levels, ppm levels, location(if applicable)
 
 Water Tests(PA):
