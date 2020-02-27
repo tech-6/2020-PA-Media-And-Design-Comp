@@ -1,0 +1,30 @@
+This class file will allow the user to either view
+the sample list or create a new water sample to analyze.
+
+START
+A new 'WaterData' object is created to hold the list of samples.
+Two unnasigned buttons are initialized. They are named samples and newsample.
+An unnasigned text box is initialized.
+
+When the app is loaded it will do the following: {
+  The screen will be set to the main screen
+  
+  The text box is assigned to the one on the main screen
+  The buttons are assigned to the buttons on the main screen
+  
+  A string (num) is created and set to be blank
+  The string is set to the amount of samples in the sample list
+  
+  The text box is then set to display that string
+  
+  The 'samples' button is set to react when it is clicked: {
+    when it is clicked, it will load the page that lists the samples.
+    END
+  }
+  
+  The 'newsample' button is set to react when it is clicked: {
+    when it is clicked, it will load the page for making a new sample.
+    END
+  }
+  END
+}
