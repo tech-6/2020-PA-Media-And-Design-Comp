@@ -1,0 +1,69 @@
+This class is meant to create a new water sample
+that can then be tested in the samples list.
+
+START
+Several 'strings' are initialized and are unnasigned
+  They are called sampleName, sampleColor, and sampleLocation;
+Several decimal numbers are initialized and are unnasigned
+  They are called samplePH and samplePPM;
+  
+Several editable text boxes are initialized and are unnasigned
+  They are called nameField, colorField, locationField, phField, and ppmField;
+A normal text box is initialized and unnasigned;
+
+A button is initialized and unnasigned.;
+
+When the app is loaded it will do the following: {
+   The screen will be set to the screen for making a new sample;
+   
+   The button will be assigned to the submit button on the new sample screen;
+   
+   All of the editable text boxes will be assigned to their respective text boxes on the new sample screen;
+   
+   The text box will assigned to the warning message text box on the new sample screen;
+   It is then set to be invisible;
+   
+   The submit button is set to react when clicked:{
+    A counter number is made and set to 0;
+    
+    IF: nameField text box was set to something
+      set nameField to what was entered;
+        OTHERWISE:
+          do not change nameField and increase the counter by 1;
+          
+    IF: colorField text box was set to something
+      set colorField to what was entered;
+        OTHERWISE:
+          do not change colorField and increase the counter by 1;
+          
+    IF: locationField text box was set to something
+      set locationField to what was entered;
+        OTHERWISE:
+          do not change locationField and increase the counter by 1;
+          
+    IF: phField text box was set to something
+      set phField to what was entered;
+        OTHERWISE:
+          do not change phField and increase the counter by 1;
+          
+    IF: ppmField text box was set to something
+      set ppmField to what was entered;
+        OTHERWISE:
+          do not change ppmField and increase the counter by 1;
+          
+    IF: the counter is still at 0 {
+      Create a new 'WaterSample' object and set its contents to what was entered in the text boxes.;
+      Create a new 'DataCreation' object to add the new sample.
+      
+      Use the newsample function that DataCreation has to make the WaterSample;
+      
+      Load the main screen again to leave the NewSample screen
+    }
+    
+    IF: the counter is above 0
+      set the warning text box to be visible;
+      
+   END
+   }
+ END
+}
