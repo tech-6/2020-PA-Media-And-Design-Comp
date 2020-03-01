@@ -56,6 +56,7 @@ http://environmentalservicelab.com/docs/PSU%20-%20Water%20Testing%20Interpretati
 
 color
 https://www.ewg.org/enviroblog/2016/03/five-reasons-your-tap-water-changed-color
+https://www.femoran.com/hvac-plumbing-construction-blog/discolored-water-what-different-colors-can-tell-you-about-your-water-supply
 
 Home water testing
 https://www.epa.gov/sites/production/files/2015-11/documents/2005_09_14_faq_fs_homewatertesting.pdf
